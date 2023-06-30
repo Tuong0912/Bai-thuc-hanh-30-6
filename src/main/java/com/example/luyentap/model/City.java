@@ -4,19 +4,25 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Data
 public class City {
     @Id
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotNull
     private String name;
     @ManyToOne
-    private Country country ;
+    private Country country;
+    @NotNull
     private double dienTich;
+    @NotNull
     private int danSo;
+    @NotNull
     private int gdp;
+    @NotNull
     private String status;
 
     public City(String name, Country country, double dienTich, int danSo, int gdp, String status) {
