@@ -41,17 +41,17 @@ function createForm() {
 
 <tr>
 <td>Diện Tích</td>
-<td><input type="text" id="dienTich" class="form-control"></td>
+<td><input type="number" id="dienTich" class="form-control"></td>
 </tr>
 
 <tr>
 <td>Dân Số</td>
-<td><input type="text" id="danSo" class="form-control"></td>
+<td><input type="number" id="danSo" class="form-control"></td>
 </tr>
 
 <tr>
 <td>GDP</td>
-<td><input type="text" id="gdp" class="form-control"></td>
+<td><input type="number" id="gdp" class="form-control"></td>
 </tr>
 
 <tr>
@@ -153,17 +153,17 @@ function updateForm(id) {
 
 <tr>
 <td>Diện tích</td>
-<td><input type="text" id="dienTich" value="${data.dienTich}" class="form-control"></td>
+<td><input type="number" id="dienTich" value="${data.dienTich}" class="form-control"></td>
 </tr>
 
 <tr>
 <td>Dân số</td>
-<td><input type="text" id="danSo" value="${data.danSo}" class="form-control"></td>
+<td><input type="number" id="danSo" value="${data.danSo}" class="form-control"></td>
 </tr>
 
 <tr>
 <td>GDP</td>
-<td><input type="text" id="gdp" value="${data.gdp}" class="form-control"></td>
+<td><input type="number" id="gdp" value="${data.gdp}" class="form-control"></td>
 </tr>
 
 <tr>
